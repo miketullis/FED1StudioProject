@@ -1,0 +1,158 @@
+﻿body {
+    font-family: oswald, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&family=Rubik&display=swap');
+
+
+
+/*
+#d47c1e yellow
+#808080 light gray
+#414244 dark gray
+*/
+
+
+
+
+header {
+    background-color: white;
+}
+
+    header div {
+        background-color: black;
+        height: 4em;
+        margin-bottom: 1em;
+    }
+
+    header img#logo {
+        max-height: 130px;
+        max-width: 80%;
+        padding-left: 5em;
+    }
+    
+main {
+    margin: 5em 3em 5em 3em;
+}
+
+section {
+    padding: 5em;
+}
+
+
+/* Footer Styling*/
+footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6em;
+    font-size: 18px;
+}
+
+    footer p {
+        padding-left: 5em;
+        position: absolute;
+        bottom: 50px;
+    }
+
+        footer p#foot a {
+            margin: auto;
+            text-align: center;
+            padding: 0;
+            color: #d47c1e; /*yellow*/
+            text-decoration: none;
+        }
+
+/* Social Media Bar Styling*/
+ul.social {
+    margin: 0;
+    float: right;
+}
+
+.social li {
+    display: inline-block;
+    margin: .75em 2em;
+}
+
+.social img {
+    max-width: 2.3em;
+}
+
+
+
+
+
+
+/* Navigation Styling*/
+a:hover, a:active, a:focus {
+    color: white;
+    opacity: .4;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    background-color: #d47c1e; /*yellow*/
+    padding-left: 5em;
+}
+
+    nav ul li {
+        display: inline-block;
+        padding: .4em 0;
+    }
+
+        nav ul li a {
+            display: block;
+            padding: .3em 1em;
+        }
+
+nav a.current {
+    color: #808080; /*light gray*/
+   font-weight: bolder;
+}
+
+
+/*Class List Table Styling*/
+table, tr, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse; /*removes duplicate borders*/
+}
+
+table {
+    text-align: center; /*aligns text to center of parent*/
+    margin: auto; /*aligns item to center of parent*/
+}
+
+td, td {
+    padding: 1em 3em 1em 3em;
+}
+
+thead th.tbl-hd1 {
+    color: #d47c1e;
+    font-size: 40px;
+    padding: 0 0 .5em 0;
+}
+
+thead tr.tbl-hd2 {
+    background-color: #d47c1e;
+    font-size: 20px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+tbody tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+

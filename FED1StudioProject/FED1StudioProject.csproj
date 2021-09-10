@@ -67,15 +67,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Archive\team.html" />
     <Content Include="CSS\main.css" />
-    <Content Include="images\fb.png" />
-    <Content Include="images\ig.png" />
-    <Content Include="images\ln.png" />
-    <Content Include="images\logo.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\banner3.jpg" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\courses\tech1.jpg" />
+    <Content Include="images\courses\tech2.jpg" />
+    <Content Include="images\courses\Tech3.jpg" />
+    <Content Include="images\courses\tech4.jpg" />
+    <Content Include="images\courses\tech5.jpg" />
+    <Content Include="images\courses\tech6.jpg" />
+    <Content Include="images\courses\tech7.jpg" />
+    <Content Include="images\fb-icon.png" />
+    <Content Include="images\ln-icon.png" />
     <Content Include="images\nh-logo.png" />
-    <Content Include="images\ttr.png" />
     <Content Include="classes.html" />
     <Content Include="contact.html" />
+    <Content Include="images\teamWork1.jpg" />
+    <Content Include="images\teamWork2.jpg" />
+    <Content Include="images\team\aliceCooperson.jpg" />
+    <Content Include="images\team\brianAddison.jpg" />
+    <Content Include="images\team\kumarShiva.jpg" />
+    <Content Include="images\team\melMcClain.jpg" />
+    <Content Include="images\team\rachelWebb.jpg" />
+    <Content Include="images\team\sharonStoner.jpg" />
+    <Content Include="images\techGroup.jpg" />
+    <Content Include="images\tw-icon.png" />
     <Content Include="team.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />

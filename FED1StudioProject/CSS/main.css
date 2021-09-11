@@ -256,6 +256,7 @@ table {
     text-align: center; /*aligns text to center of parent*/
     margin: auto; /*aligns item to center of parent*/
     box-shadow: 0 5px 8px 3px #808080;
+    display: none;
 }
 
 td, td {
@@ -282,6 +283,47 @@ tbody tr:nth-child(even) {
 }
 
 
+/*Contact Form Styling*/
+
+.form {
+    max-width: 50em;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 5px 8px 3px #808080;
+    margin: auto;
+
+}
+
+form textarea {
+    height: 10em; /*default height*/
+}
+
+/* inputs and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 1em;
+    border: 1px solid #414244; /* Dark Gray border */
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: .8em; 
+    margin-bottom: 1.5em;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: #808080;
+    padding: .9em 2em;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        opacity: .4;
+    }
 
 
 

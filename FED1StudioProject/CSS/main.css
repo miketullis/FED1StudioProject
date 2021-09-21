@@ -22,11 +22,13 @@ body {
 header {
     background-color: white;
 }
+
     header div {
         background-color: black;
         height: 4em;
         margin-bottom: 1em;
     }
+
     header img#logo {
         max-height: 120px;
         max-width: 80%;
@@ -42,15 +44,15 @@ a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     font-size: 36px;
 }
 
-.back{
-     text-align:right;
-     padding-bottom: 1em;
-width: 100%;
- }
+.back {
+    text-align: right;
+    padding-bottom: 1em;
+    width: 100%;
+}
 
 nav a {
     font-size: 18px;
@@ -76,7 +78,7 @@ nav ul {
         }
 
 nav a.current {
-    color: #808080; /*light gray*/
+    color: #414244; /*dark gray*/
     font-weight: bolder;
 }
 
@@ -148,14 +150,12 @@ footer {
         max-width: 100%;
     }
 
-
-
 .imgLeft {
     float: left;
     width: 50%;
     max-width: 850px;
     padding-right: 2em;
-    padding-bottom: 2em; 
+    padding-bottom: 2em;
 }
 
 .imgRight {
@@ -174,7 +174,7 @@ footer {
     clear: both;
     border-bottom: 5px dotted #808080;
     margin-bottom: 1.25em;
-    text-align:right;
+    text-align: right;
 }
 
 .team {
@@ -184,6 +184,11 @@ footer {
     padding-right: 3em;
     max-width: 400px;
 }
+
+    .team:hover, .classImg:hover {
+        opacity: .7;
+    }
+
 
 
 /*-----IDs-----*/
@@ -211,7 +216,6 @@ footer {
     float: left;
     border-right: 2px solid #808080;
     box-sizing: border-box;
-    /*box-sizing: border-box; changes the way th box model is calulated to include the padding, boarder, and margins*/
 }
 
 #rightColumn {
@@ -219,9 +223,6 @@ footer {
     float: right;
     padding-top: 4em;
 }
-
-
-
 
 
 /* Social Media Bar Styling*/
@@ -241,7 +242,7 @@ ul.social {
 }
 
 footer ul.social {
-height: 6em;
+    height: 6em;
 }
 
 
@@ -249,7 +250,6 @@ height: 6em;
 table, tr, th, td {
     border-bottom: 1px solid black;
     border-collapse: collapse; /*removes duplicate borders*/
-    
 }
 
 table {
@@ -292,7 +292,6 @@ tbody tr:nth-child(even) {
     padding: 20px;
     box-shadow: 0 5px 8px 3px #808080;
     margin: auto;
-
 }
 
 form textarea {
@@ -301,12 +300,12 @@ form textarea {
 
 /* inputs and textareas */
 input[type=text], select, textarea {
-    width: 100%; 
+    width: 100%;
     padding: 1em;
     border: 1px solid #414244; /* Dark Gray border */
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: .8em; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: .8em;
     margin-bottom: 1.5em;
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
@@ -326,25 +325,122 @@ input[type=submit] {
     }
 
 
+/* Class Schedule Side Bar Navigation */
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    overflow-x: hidden;
+    padding-top: 10em;
+    transition: .5s;
+}
 
-
-
-@media screen and (min-width: 480px) {
-    #leftsidebar {
-        width: 200px;
-        float: left;
+    .sidenav a {
+        padding: 12px 8px 12px 44px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: .3s;
     }
 
-    #main {
-        margin-left: 216px;
-    }
+        .sidenav a:hover {
+            opacity: .4;
+        }
+
+.close-btn {
+    position: absolute;
+    top: 2em;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+.button {
+    background: rgba(0,0,0,0.8);
+    height: 100%;
+    width: 2em;
+    z-index: 1030;
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.vertical-text {
+    position: absolute;
+    top: 45%;
+    left: .4em;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    color: white;
+    font-weight: bold;
 }
 
 
-@media screen and (max-width: 1800px) {
-    .classesGrid {
-        grid-template-columns: auto auto;
+/* Custom lightbox styling */
+.imgLightbox {
+    display: block;
+    max-width: 70%;
+    height: auto;
+}
+
+#lightbox-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    padding-top: 10%;
+    display: none;
+}
+
+    #lightbox-container p {
+        color: #fff;
+    }
+
+#lightbox-content img {
+    border: 16px solid #d47c1e;
+    margin: auto;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 479px) {
+
+    section {
+        padding: 30px;
+    }
+
+    .imgLeft, .imgRight {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    header img#logo {
+        max-height: 120px;
+        max-width: 80%;
+        padding: 0 10% 0 10%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #leftColumn {
+        width: 100%;
+    }
+
+    #rightColumn {
+        display: none;
     }
 }
 
@@ -356,14 +452,20 @@ input[type=submit] {
     .social li {
         margin: .75em 1em;
     }
+}
 
+@media screen and (max-width: 1800px) {
+    .classesGrid {
+        grid-template-columns: auto auto;
+    }
 }
 
 
 
 
 
-/*
+
+    /*
 #d47c1e yellow
 #808080 light gray
 #414244 dark gray

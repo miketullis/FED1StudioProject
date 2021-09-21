@@ -94,6 +94,7 @@
     <Content Include="images\team\sharonStoner.jpg" />
     <Content Include="images\techGroup.jpg" />
     <Content Include="images\tw-icon.png" />
+    <Content Include="JS\fed1js.js" />
     <Content Include="team.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
@@ -110,9 +111,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="JS\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
